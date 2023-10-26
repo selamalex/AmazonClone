@@ -5,6 +5,7 @@ import Checkout from './Checkout';
 import Home from './Home';
 import Login from './Login';
 import Nav from './Nav';
+import Payment from './Payment';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 function App() {
@@ -37,19 +38,19 @@ function App() {
               </>
             }
           />
-{/*
+
 <Route
             path="/payment"
             element={
               <>
-              <Elements stripe={promise}>
+              {/* <Elements stripe={promise}> */}
                 <Nav/>
              <Payment/>
-              </Elements>
+              {/* </Elements> */}
               
               </>
             }
-          /> */}
+          /> 
         <Route
             path="/checkout"
             element={

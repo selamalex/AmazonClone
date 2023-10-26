@@ -1,4 +1,9 @@
-.App {
+body {
+
+  background-image: linear-gradient(to right, #FEEECA, #fcc3d0);
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +40,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

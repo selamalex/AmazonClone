@@ -1,24 +1,89 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-
+import Checkout from './Checkout';
+import Home from './Home';
+import Login from './Login';
+import Nav from './Nav';
+import { useStateValue } from './StateProvider';
+import { auth } from './firebase';
 function App() {
+  const [{}, dispatch]= useStateValue();
+  useEffect(()=>{
+    auth.onAuthStateChanged((authUser)=>{
+      if(authUser){
+        dispatch({
+          type: 'SET_USER',
+          user: authUser,
+        });
+      } else{
+        dispatch({
+          type: 'SET_USER',
+          user: null,
+
+        });
+      }
+    });
+   }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className="App">
+        <Routes>
+         <Route
+            path="/login"
+            element={
+              <>
+               <Login/>
+              </>
+            }
+          />
+{/*
+<Route
+            path="/payment"
+            element={
+              <>
+              <Elements stripe={promise}>
+                <Nav/>
+             <Payment/>
+              </Elements>
+              
+              </>
+            }
+          /> */}
+        <Route
+            path="/checkout"
+            element={
+              <>
+                <Nav />
+                <Checkout/>
+              </>
+            }
+          />
+{/* <Route
+            path="/orders"
+            element={
+              <>
+                <Nav />
+               <Home/>
+              </>
+            }
+          /> */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Nav />
+                <Home/>
+              </>
+            }
+          />
+ 
+        </Routes>
+
     </div>
+    </Router>
+   
+   
   );
 }
 

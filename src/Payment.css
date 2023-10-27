@@ -6,3 +6,12 @@
 .address-displayer {
     display: flex;
 }
+
+.btnBuy {
+    background-color: #f0c14b;
+    border-radius: 2px;
+    width: 200px;
+    height: 30px;
+    border: solid 1px;
+    margin-top: 10px;
+}

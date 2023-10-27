@@ -1,3 +1,5 @@
+import { Elements } from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 import React, { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
@@ -8,8 +10,11 @@ import Nav from './Nav';
 import Payment from './Payment';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
+
+const promise = loadStripe("pk_test_51NzZfKBFyxamoQUyUBibbb9HMCaMz3r0zavbreRKuJ1weHX2KlwLsSEZWRb566DmL1S7XIBQGobVM3MEZ3APgWvs009vrJwdzl");
+
 function App() {
-  const [{}, dispatch]= useStateValue();
+  const [{}, dispatch]=useStateValue();
   useEffect(()=>{
     auth.onAuthStateChanged((authUser)=>{
       if(authUser){
@@ -30,7 +35,7 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-         <Route
+        <Route
             path="/login"
             element={
               <>
@@ -38,19 +43,18 @@ function App() {
               </>
             }
           />
-
 <Route
             path="/payment"
             element={
               <>
-              {/* <Elements stripe={promise}> */}
+              <Elements stripe={promise}>
                 <Nav/>
              <Payment/>
-              {/* </Elements> */}
+              </Elements>
               
               </>
             }
-          /> 
+          />
         <Route
             path="/checkout"
             element={
@@ -60,15 +64,7 @@ function App() {
               </>
             }
           />
-{/* <Route
-            path="/orders"
-            element={
-              <>
-                <Nav />
-               <Home/>
-              </>
-            }
-          /> */}
+
           <Route
             path="/"
             element={
@@ -79,11 +75,20 @@ function App() {
             }
           />
  
+ <Route
+            path="/orders"
+            element={
+              <>
+                <Nav />
+               <Home/>
+              </>
+            }
+          />
         </Routes>
-
+        
+        
     </div>
     </Router>
-   
    
   );
 }

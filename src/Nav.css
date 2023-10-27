@@ -39,24 +39,28 @@
 .search-button {
     margin-top: 15px;
     margin-left: 15px;
-    padding-right: 350px;
+    padding-right: 300px;
     padding-bottom: 15px;
+
 }
 
 .header-option1 {
     display: inline;
     padding: 10px;
     padding-left: 20px;
+
 }
 
 .header-option2 {
     display: inline;
     padding: 10px;
+
 }
 
 .header-option3 {
     display: inline;
     padding: 10px;
+
 }
 
 .header-optionLineOne {

@@ -15,11 +15,11 @@ const reducer = (state, action)=>{
             //        ...state, 
             //        basket: [...state.basket, action.item],
             //    };
-            //    case 'EMPTY-BASKET':
-            //     return{
-            //         ...state,
-            //         basket:[],
-            //     };
+               case 'EMPTY-BASKET':
+                return{
+                    ...state,
+                    basket:[],
+                };
             case 'REMOVE-FROM-BASKET':
                 const index=state.basket.findIndex((basketItem)=> basketItem.id ===action.id
                 );

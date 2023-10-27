@@ -21,11 +21,11 @@ function Home() {
                      image="https://m.media-amazon.com/images/I/5119-WJ04aL._AC_UL480_QL65_.jpg"
                      />
                      <Product
-                     id="firstRowSColumn"
-                     title="More Garlic Grinding Machine Originality Garlic Cutter Kitchen Garlic Stirring Device Mashed Organ Small Tool"
-                     price="19"
-                     rating={2}
-                     image="https://m.media-amazon.com/images/I/5119-WJ04aL._AC_UL480_QL65_.jpg"
+                     id="firstRowTColumn"
+                     title="Ninja BL610 Professional 72 Oz Countertop Blender with 1000-Watt Base and Total Crushing Technology"
+                     price="52.56"
+                     rating={4}
+                     image="https://m.media-amazon.com/images/I/71iD5RyhuaL._AC_UL320_.jpg"
                      />
                 </div>
                 <div className='home-row'>
@@ -45,39 +45,39 @@ function Home() {
                      />
                      <Product
                      id="secondRowTColumn"
-                     title="New Apple iPad Pro (12.9-inch, Wi-Fi, 128GB) - Silver (4th Generation)"
-                     price="598.99"
-                     rating={4}
-                     image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"/>
+                     title="OXO Good Grips 5-lb Food Scale with Pull-Out Display,Black"
+                     price="59.99"
+                     rating={3}
+                     image="https://m.media-amazon.com/images/I/81RuhfaLExL._AC_UL320_.jpg"/>
                      <Product
-                     id="firstRowSColumn"
-                     title="More Garlic Grinding Machine Originality Garlic Cutter Kitchen Garlic Stirring Device Mashed Organ Small Tool"
-                     price="19"
+                     id="secondRowFColumn"
+                     title="T-fal Experience Nonstick Fry Pan Set 3 Piece, 8, 10.25, 12 Inch Induction Oven Broiler Safe 400F Cookware andPots"
+                     price="39.29"
                      rating={2}
-                     image="https://m.media-amazon.com/images/I/5119-WJ04aL._AC_UL480_QL65_.jpg"
+                     image="https://m.media-amazon.com/images/I/81BiJk3eXlL._AC_UL320_.jpg"
                      />
                 </div>
                 <div className='home-row'>
                      <Product
-                     id="firstRowSColumn"
-                     title="Crosley Furniture Tara 3-Piece Sideboard and Pantry Set, Distressed Gray"
-                     price="190.7"
-                     rating={4}
-                     image="https://m.media-amazon.com/images/I/71sqHCf2w2L.__AC_SY300_SX300_QL70_FMwebp_.jpg"
+                     id="ThirdRowFColumn"
+                     title="Swift Kitchen Vegetable Peeler with Ultra Sharp Surgical Grade Stainless Steel - Multipurpose, Rustproof"
+                     price="6"
+                     rating={2}
+                     image="https://m.media-amazon.com/images/I/71UQByYiLCL._AC_UL320_.jpg"
                      />
                      <Product
-                     id="firstRowSColumn"
-                     title="More Garlic Grinding Machine Originality Garlic Cutter Kitchen Garlic Stirring Device Mashed Organ Small Tool"
-                     price="19"
-                     rating={2}
-                     image="https://m.media-amazon.com/images/I/5119-WJ04aL._AC_UL480_QL65_.jpg"
+                     id="ThirdRowSColumn"
+                     title="Geedel Vegetable Chopper, Onion Chopper Pro Food Chopper, Kitchen Vegetable Slicer Dicer Cutter"
+                     price="26.99"
+                     rating={5}
+                     image="https://m.media-amazon.com/images/I/514RZaRSSbL._AC_UL320_.jpg"
                      />
                      <Product
-                     id="firstRowSColumn"
-                     title="More Garlic Grinding Machine Originality Garlic Cutter Kitchen Garlic Stirring Device Mashed Organ Small Tool"
-                     price="19"
-                     rating={2}
-                     image="https://m.media-amazon.com/images/I/5119-WJ04aL._AC_UL480_QL65_.jpg"
+                     id="ThirdRowTColumn"
+                     title="Mueller Austria Ultra-Stick 500 Watt 9-Speed Immersion Multi-Purpose Hand Blender"
+                     price="34.97"
+                     rating={3}
+                     image="https://m.media-amazon.com/images/I/61jiMJXWlJL._AC_UL320_.jpg"
                      />
                 </div>
                 <div className='home-row'>

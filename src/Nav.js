@@ -48,7 +48,7 @@ function Nav() {
             <div className='search-button-div'>
 <button className='search-click'> <FaSearch size='20px'/></button>
             </div>
-            <Link to={!user && "./login"}>
+            <Link to={!user && "../login"}>
             <div className='header-option1'>
                 <button onClick={handleAuthentication} className='button-option1'>
 <div className='header-optionLineOne'> Hello {!user? 'Guest':user.email}</div>
